@@ -6,7 +6,8 @@
         // Function to connect to the database
         protected function connection() {
             try {
-                $connect = $this->dbhost = new PDO("mysql:host=localhost; dbname=bd_ferreteria", "root", "");
+                // $connect = $this->dbhost = new PDO("mysql:host=localhost; dbname=bd_ferreteria", "root", "");
+                $connect = $this->dbhost = new PDO("mysql:host=us-cdbr-east-06.cleardb.net; dbname=heroku_58dab3502a9936b", "b1788cb2826d0c", "7e326332");
                 return $connect;
             }
             catch (Exception $e) {
